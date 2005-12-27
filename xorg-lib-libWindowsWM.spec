@@ -5,8 +5,8 @@ Version:	1.0.0
 Release:	0.1
 License:	MIT
 Group:		X11/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/lib/libWindowsWM-%{version}.tar.bz2
-# Source0-md5:	8d6ae60e68410fcafda3db834b1d3786
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/lib/libWindowsWM-%{version}.tar.bz2
+# Source0-md5:	337b379fd00a67345b083100c4e6ba95
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
