@@ -1,5 +1,5 @@
 Summary:	WindowsWM extension library
-Summary(pl):	Biblioteka rozszerzenia WindowsWM
+Summary(pl.UTF-8):   Biblioteka rozszerzenia WindowsWM
 Name:		xorg-lib-libWindowsWM
 Version:	1.0.0
 Release:	2
@@ -20,12 +20,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 WindowsWM extension library.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka rozszerzenia WindowsWM.
 
 %package devel
 Summary:	Header files for WindowsWM library
-Summary(pl):	Pliki nag³ówkowe biblioteki WindowsWM
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki WindowsWM
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXext-devel
@@ -37,15 +37,15 @@ WindowsWM extension library.
 This package contains the header files needed to develop programs that
 use libWindowsWM.
 
-%description devel -l pl
+%description devel -l pl.UTF-8
 Biblioteka rozszerzenia WindowsWM.
 
-Pakiet zawiera pliki nag³ówkowe niezbêdne do kompilowania programów
-u¿ywaj±cych biblioteki libWindowsWM.
+Pakiet zawiera pliki nagÅ‚Ã³wkowe niezbÄ™dne do kompilowania programÃ³w
+uÅ¼ywajÄ…cych biblioteki libWindowsWM.
 
 %package static
 Summary:	Static WindowsWM library
-Summary(pl):	Biblioteka statyczna WindowsWM
+Summary(pl.UTF-8):   Biblioteka statyczna WindowsWM
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -54,10 +54,10 @@ WindowsWM extension library.
 
 This package contains the static libWindowsWM library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka rozszerzenia WindowsWM.
 
-Pakiet zawiera statyczn± bibliotekê libWindowsWM.
+Pakiet zawiera statycznÄ… bibliotekÄ™ libWindowsWM.
 
 %prep
 %setup -q -n libWindowsWM-%{version}
