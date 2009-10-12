@@ -14,14 +14,20 @@ BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-proto-windowswmproto-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.2
+BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-WindowsWM extension library.
+WindowsWM is a simple library designed to interface with the
+Windows-WM extension. This extension allows X window managers to
+better interact with the Cygwin XWin server when running X11 in a
+rootless mode.
 
 %description -l pl.UTF-8
-Biblioteka rozszerzenia WindowsWM.
+WindowsWM to prosta biblioteka zaprojektowana jako interfejs do
+rozszerzenia Windows-WM. Rozszerzenie to pozwala zarządcom okien X
+lepiej współpracować z cygwinowym serwerem XWin, kiedy X11 działa w
+trybie "rootless".
 
 %package devel
 Summary:	Header files for WindowsWM library
@@ -87,8 +93,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS COPYING ChangeLog
+%doc AUTHORS COPYING ChangeLog README
 %attr(755,root,root) %{_libdir}/libWindowsWM.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libWindowsWM.so.7
 
 %files devel
 %defattr(644,root,root,755)
