@@ -1,12 +1,12 @@
 Summary:	WindowsWM extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia WindowsWM
 Name:		xorg-lib-libWindowsWM
-Version:	1.0.0
-Release:	4
+Version:	1.0.1
+Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libWindowsWM-%{version}.tar.bz2
-# Source0-md5:	337b379fd00a67345b083100c4e6ba95
+# Source0-md5:	274b2b5620a524fd7bb739edb97317f5
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
